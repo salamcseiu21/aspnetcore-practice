@@ -16,6 +16,7 @@ namespace EmployeeManagement.Models.EntityModels
         }
 
         public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Department> Departments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
